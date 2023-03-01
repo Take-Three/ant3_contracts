@@ -1,0 +1,906 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "ControllerReceivedTokens",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint8",
+						"name": "version",
+						"type": "uint8"
+					}
+				],
+				"name": "Initialized",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "fromOrderID",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "activeOrderID",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "fromAddress",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "toAddress",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "level",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "daysActive",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "shareAmt",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "lastRound",
+						"type": "uint256"
+					}
+				],
+				"name": "NewActiveOrder",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "alphaAccmQty",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "ant3Token",
+				"outputs": [
+					{
+						"internalType": "contract Ant3Token",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "betaAccmQty",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "packageId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "promoCode",
+						"type": "uint256"
+					}
+				],
+				"name": "buyNodesPackage",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "checkQuota",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "deAnt3Token",
+				"outputs": [
+					{
+						"internalType": "contract DeAnt3Token",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address[]",
+						"name": "userAddress",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "orderId",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "expireRound",
+						"type": "uint256[]"
+					}
+				],
+				"name": "expireUserOrder",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "gammaAccmQty",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address[]",
+						"name": "userAddress",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "quantity",
+						"type": "uint256[]"
+					}
+				],
+				"name": "generatePromoCode",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "quantity",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "userAddress",
+						"type": "address"
+					}
+				],
+				"name": "generatePromoCode",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getMaxClaimRound",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "packageId",
+						"type": "uint256"
+					}
+				],
+				"name": "getPackagePrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "deant",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "guardian",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "guardianToken",
+				"outputs": [
+					{
+						"internalType": "contract IERC20Upgradeable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_deAnt3Token",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_ant3Token",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_guardianToken",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_memberController",
+						"type": "address"
+					}
+				],
+				"name": "initialize",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "maxClaimRound",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "memberController",
+				"outputs": [
+					{
+						"internalType": "contract IMemberController",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "nodeActiveArray",
+				"outputs": [
+					{
+						"internalType": "contract INodeActive",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "nodeActiveL1",
+				"outputs": [
+					{
+						"internalType": "contract INodeActive",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "nodeActiveL2",
+				"outputs": [
+					{
+						"internalType": "contract INodeActive",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "nodePassive",
+				"outputs": [
+					{
+						"internalType": "contract INodePassive",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "onERC20Receive",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "packagePrices",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "alphaDeAntPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "alphaGuardianPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "betaDeAntPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "betaGuardianPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "gammaDeAntPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "gammaGuardianPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "packageId",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "referralRank",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					}
+				],
+				"name": "removeCaller",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					}
+				],
+				"name": "setCaller",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_packageId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_newAmt",
+						"type": "uint256"
+					}
+				],
+				"name": "setDeAntPrice",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "packageId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "quota",
+						"type": "uint256"
+					}
+				],
+				"name": "setDefaultQuota",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_packageId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_newAmt",
+						"type": "uint256"
+					}
+				],
+				"name": "setGuardianPrice",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "round",
+						"type": "uint256"
+					}
+				],
+				"name": "setMaxClaimRound",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_memberController",
+						"type": "address"
+					}
+				],
+				"name": "setMemberControllerContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_nodeActiveL1",
+						"type": "address"
+					}
+				],
+				"name": "setNodeActiveContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_nodePassive",
+						"type": "address"
+					}
+				],
+				"name": "setNodePassiveContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "today",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "validCaller",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"owner()": {
+					"details": "Returns the address of the current owner."
+				},
+				"renounceOwnership()": {
+					"details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+				},
+				"transferOwnership(address)": {
+					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/nodes/NodeController.sol": "NodeController"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol": {
+			"keccak256": "0x247c62047745915c0af6b955470a72d1696ebad4352d7d3011aef1a2463cd888",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d7fc8396619de513c96b6e00301b88dd790e83542aab918425633a5f7297a15a",
+				"dweb:/ipfs/QmXbP4kiZyp7guuS7xe8KaybnwkRPGrBc2Kbi3vhcTfpxb"
+			]
+		},
+		"@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol": {
+			"keccak256": "0x0203dcadc5737d9ef2c211d6fa15d18ebc3b30dfa51903b64870b01a062b0b4e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6eb2fd1e9894dbe778f4b8131adecebe570689e63cf892f4e21257bfe1252497",
+				"dweb:/ipfs/QmXgUGNfZvrn6N2miv3nooSs7Jm34A41qz94fu2GtDFcx8"
+			]
+		},
+		"@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol": {
+			"keccak256": "0x7c7ac0bc6c340a7f320524b9a4b4b079ee9da3c51258080d4bab237f329a427c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e7000057dd28a5fd92e5687c2ee6044181531bab0fcb0e5003cbe33ae024d06d",
+				"dweb:/ipfs/QmZYhnjEQxVqVcLMJMS7VbhuMSCNM4YCgom1wg5borSp18"
+			]
+		},
+		"@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol": {
+			"keccak256": "0x4e733d3164f73f461eaf9d8087a7ad1ea180bdc8ba0d3d61b0e1ae16d8e63dff",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://75b47c3aeca7b66ea6752f8be020ec5c1c502de6ec9065272dae23d3a52196e2",
+				"dweb:/ipfs/QmUebPMHv16tYKFh5BmBQkMfRFb5b8UZ2RgVwdjxCeufVF"
+			]
+		},
+		"@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20CappedUpgradeable.sol": {
+			"keccak256": "0xc707bc7f15de49a0c4da261822a3075d8c171b3c08543fc8f0d0021b8d227b92",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d3c294a8ff16f223772b520a7b823dff54458ba98e6da4ffe9a3a427a16a47c6",
+				"dweb:/ipfs/QmRbZ5hdJzUMVAai2Zpc8YdSuPWxeNPV1aiosRySrEuQpu"
+			]
+		},
+		"@openzeppelin/contracts-upgradeable/token/ERC20/extensions/IERC20MetadataUpgradeable.sol": {
+			"keccak256": "0x605434219ebbe4653f703640f06969faa5a1d78f0bfef878e5ddbb1ca369ceeb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4c9c634f99dd02d73ce7498b03a6305e251c05eeebb71457306561c1fab0fa7d",
+				"dweb:/ipfs/QmbYRBbZHy8YoaQKXdPryiL3CSS7uUaRfRYi1TUj9cTqJQ"
+			]
+		},
+		"@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol": {
+			"keccak256": "0x611aa3f23e59cfdd1863c536776407b3e33d695152a266fa7cfb34440a29a8a3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9b4b2110b7f2b3eb32951bc08046fa90feccffa594e1176cb91cdfb0e94726b4",
+				"dweb:/ipfs/QmSxLwYjicf9zWFuieRc8WQwE4FisA1Um5jp1iSa731TGt"
+			]
+		},
+		"@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol": {
+			"keccak256": "0x963ea7f0b48b032eef72fe3a7582edf78408d6f834115b9feadd673a4d5bd149",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d6520943ea55fdf5f0bafb39ed909f64de17051bc954ff3e88c9e5621412c79c",
+				"dweb:/ipfs/QmWZ4rAKTQbNG2HxGs46AcTXShsVytKeLs7CUCdCSv5N7a"
+			]
+		},
+		"@openzeppelin/contracts-upgradeable/utils/Math/SafeMathUpgradeable.sol": {
+			"keccak256": "0xcaa8b7861115ea691c77ddbeac140a444e0edcd1d9812a43942c0f6b42b36a49",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9ba2a8d7cd7bdbd42a5c525103da0cd2d190a3f702b7e796bada67f6c613622e",
+				"dweb:/ipfs/QmfZSHW9FxVdWwRAQ171dkhumCPEGfAFMXHPeipPc4M2ag"
+			]
+		},
+		"contracts/nodes/NodeController.sol": {
+			"keccak256": "0xa0502d2c663e593e563b5b85caf0a8e79b5f1b33d7b7936ef534a89f3950f9fa",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://15b6c9986d49d5076f71c3bfb645e3bf70b3db279e7aba0a37c21d996cba0520",
+				"dweb:/ipfs/QmPP6sXqFNvgefsoVAFX5RogbhMuyZPs1kpENZeWBMGs1S"
+			]
+		},
+		"contracts/nodes/interfaces/IMemberController.sol": {
+			"keccak256": "0x8bcbaa5cb0c09d48bf88d8e9c5d74dc56c20503765168be20d7785391230135f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://705e1272e1e17fbe0209176095281208aea5a8ef839826f71db318004a68da34",
+				"dweb:/ipfs/QmRL1tT71ogxjifuPy7jCCgAkkbH5nTyY7YFBH2EE4FdzG"
+			]
+		},
+		"contracts/nodes/interfaces/INodeActive.sol": {
+			"keccak256": "0xef805fa32a6bf4fe5e5909e63145a547cb96f9e3b9224985a133828109c1f92a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cd5cd2ef3b09de9e6222246f0d4e2a7003b77f03c4ab1ad498a87d666a252112",
+				"dweb:/ipfs/QmZHnszSYXBUcaNxogVqWzsmW3MfpN8mUa4b8PYykLziUY"
+			]
+		},
+		"contracts/nodes/interfaces/INodeController.sol": {
+			"keccak256": "0x182eceaf4d9fc52bcdb3813f98e973cb90aacc5e60d3bf10f7993359909d03c6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://343c54c05deab21e97268c0ef7eb181f3a67242e4d0506eccad6c4de978b1063",
+				"dweb:/ipfs/QmTkDP1LBrQwdfW1suJePiQ9UWWJjBZP8UJsE96ahsi7xW"
+			]
+		},
+		"contracts/nodes/interfaces/INodePassive.sol": {
+			"keccak256": "0xb1e049dbfae723ea4c40205c4399925b92ec2ca7d9b1c736a0f0af781044b090",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c78db5724684711637deff6ccd4f2b5fa5f467c8b5b7f45ddbd488b0cc70e989",
+				"dweb:/ipfs/QmUBzTPkEKJ2MnpUJR5ochfJ6SGVLb1KauXGWfSTz9zGQJ"
+			]
+		},
+		"contracts/token/Ant3Token.sol": {
+			"keccak256": "0x724719efa9884f48c0ef80cf3da55d8e8bd49c3fe449b4ab6b79403dadb36f9b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6dd424c64dd8a9c38d3aa3fed36e26d172da5c84c84698eb6aa49eb58680534f",
+				"dweb:/ipfs/QmQ2qmSJMyCzJcThY58pGo2LMQgfvtB3VfU9FKBE6rqLLF"
+			]
+		},
+		"contracts/token/DeAnt3Token.sol": {
+			"keccak256": "0x876376959610e78eb8d7a4f09f337cd5c2857297ca770041eb2adf4d2274008a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://00af4e5fdc8498d26b2a21482e4a654203fb004d0be4f8a7dc75845a6497b5c7",
+				"dweb:/ipfs/QmQzXKvan4DihNun3KfmpwbrpYYw6vuUiqez2r6JK3UvUA"
+			]
+		}
+	},
+	"version": 1
+}

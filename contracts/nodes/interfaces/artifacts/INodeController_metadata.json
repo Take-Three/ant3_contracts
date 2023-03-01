@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getMaxClaimRound",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/nodes/interfaces/INodeController.sol": "INodeController"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/nodes/interfaces/INodeController.sol": {
+			"keccak256": "0x182eceaf4d9fc52bcdb3813f98e973cb90aacc5e60d3bf10f7993359909d03c6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://343c54c05deab21e97268c0ef7eb181f3a67242e4d0506eccad6c4de978b1063",
+				"dweb:/ipfs/QmTkDP1LBrQwdfW1suJePiQ9UWWJjBZP8UJsE96ahsi7xW"
+			]
+		}
+	},
+	"version": 1
+}

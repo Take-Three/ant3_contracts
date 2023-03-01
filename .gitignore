@@ -1,0 +1,18 @@
+# dependencies
+node_modules
+
+# testing
+coverage
+
+# truffle
+build
+
+# environment variables
+.env
+
+slither.db.json
+secrets.json
+test/
+scripts/
+migrations/
+migrations(test)/

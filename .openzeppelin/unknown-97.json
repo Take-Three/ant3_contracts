@@ -1,0 +1,2612 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x82f75F1070fb060cE4A79fAD9a2cCBc81c74502e",
+    "txHash": "0x817f9cbc5f2a6b1fa63af1ba5b1fe4e18e33bb71d9ed04b0699d79e32e4d3174"
+  },
+  "proxies": [
+    {
+      "address": "0xe36eB4E14863B19516cB2832eD4459d574Ed319A",
+      "txHash": "0xd099a4ae7d22c6f8acdfe76c9573db8834c123364ee73f4e6bd317b45ddce945",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x08da268d62626A8f8dA80c0dfC25B2b4C1034b43",
+      "txHash": "0x35c1cf6dd4ae9add2b62fef8fdd430b49bd5fecfa38618cddf76e1f24789ce7f",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x61cBa12ea185360DB5650EB79dbcc59417aFD5C3",
+      "txHash": "0x6e93898a52125bef447561ee91f967c3e9ebb55c3a9983d29f49e45963662bcc",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x45B93515B0c79F15b259EE6B094e34452ec99c77",
+      "txHash": "0x39e04df4aba4a9cc12e9d0be225433945cd963ef5177a327fb9ec725011df50e",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "b0eddf0c8dcd2ccf24d4689918a5ccbdf025b5d3571c67a8011e2ce3a44f5f50": {
+      "address": "0x8e3b78025C5e78a5CB01415838569b7b1512b857",
+      "txHash": "0x445718cc06f4a5db9aca8627fd10968d904786b4a5fb6c34c5a23587e5a35b69",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:94"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_rOwned",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:17"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_tOwned",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:18"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:19"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_isExcludedFromFee",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:20"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_isExcluded",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:21"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_excluded",
+            "type": "t_array(t_address)dyn_storage",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:22"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_tTotal",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:24"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_rTotal",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:25"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_tFeeTotal",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:26"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:27"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:28"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_decimals",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:29"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_taxFee",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:30"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_previousTaxFee",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:31"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "totalBurned",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:32"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "holderTaxFeePercentage",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:33"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "teamTaxFeePercentage",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:34"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "burnTaxFeePercentage",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:35"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_teamAddress",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:36"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_signers",
+            "type": "t_array(t_address)dyn_storage",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:37"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "nodeControllerContract",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:38"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "stackingControllerContract",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:39"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_mapSigners",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:41"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "uniqueIdExists",
+            "type": "t_mapping(t_uint256,t_bool)",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:42"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "userTotalBurned",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:43"
+          }
+        ],
+        "types": {
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          }
+        }
+      }
+    },
+    "3586cc955d5ffb3c55ec73a6a7652429bef44aacbc1b9aed779ac0642738ecf4": {
+      "address": "0xc30c4F82575103c5d79398Fa58976F2806dac880",
+      "txHash": "0xb46b5c11022d4f73b2be4f52e4bdcf0b39c54e78914c7195c62f1ef2cb482b9b",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:94"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_rOwned",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:17"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_tOwned",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:18"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:19"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_isExcludedFromFee",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:20"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_isExcluded",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:21"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_excluded",
+            "type": "t_array(t_address)dyn_storage",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:22"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_tTotal",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:24"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_rTotal",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:25"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_tFeeTotal",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:26"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:27"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:28"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_decimals",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:29"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_taxFee",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:30"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_previousTaxFee",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:31"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "totalBurned",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:32"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "holderTaxFeePercentage",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:33"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "teamTaxFeePercentage",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:34"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "burnTaxFeePercentage",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:35"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_teamAddress",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:36"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_signers",
+            "type": "t_array(t_address)dyn_storage",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:38"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "nodeControllerContract",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:39"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "stackingControllerContract",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:40"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_mapSigners",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:42"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "uniqueIdExists",
+            "type": "t_mapping(t_uint256,t_bool)",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:43"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "userTotalBurned",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:44"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_team2Address",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:48"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_gameChangerAddress",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:49"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_farmingPoolAddress",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:50"
+          }
+        ],
+        "types": {
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          }
+        }
+      }
+    },
+    "ebbc6c31a06388d81334f460c79e406e33f5df978793dda263804151f4ec0d7f": {
+      "address": "0x87186AF1fC128664F3D29019C9eEe3D8D0EEB342",
+      "txHash": "0x78ef496ae1cc679faabddd215ddb07fe26f3b4871270f8eaeca4ab8deb9f4608",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:94"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_rOwned",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:17"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_tOwned",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:18"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:19"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_isExcludedFromFee",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:20"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_isExcluded",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:21"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_excluded",
+            "type": "t_array(t_address)dyn_storage",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:22"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_tTotal",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:24"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_rTotal",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:25"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_tFeeTotal",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:26"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:27"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:28"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_decimals",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:29"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_taxFee",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:30"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_previousTaxFee",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:31"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "totalBurned",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:32"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "holderTaxFeePercentage",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:33"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "teamTaxFeePercentage",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:34"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "burnTaxFeePercentage",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:35"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_teamAddress",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:36"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_signers",
+            "type": "t_array(t_address)dyn_storage",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:38"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "nodeControllerContract",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:39"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "stackingControllerContract",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:40"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_mapSigners",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:42"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "uniqueIdExists",
+            "type": "t_mapping(t_uint256,t_bool)",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:43"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "userTotalBurned",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:44"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_team2Address",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:48"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_gameChangerAddress",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:49"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_farmingPoolAddress",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:50"
+          }
+        ],
+        "types": {
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          }
+        }
+      }
+    },
+    "a3dacbc288bba7ed04cd7c8ef7b17d6b4aec765b90566cf3a2c03034fd8ff9d3": {
+      "address": "0xb8007F0Bbe0fc23758b6e3858ee781DF97D41379",
+      "txHash": "0x8a1073d79b18ee076719952383e8a19a554885f448b7376e21bfc2d17cae7eca",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:94"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_rOwned",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:17"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_tOwned",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:18"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:19"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_isExcludedFromFee",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:20"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_isExcluded",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:21"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_excluded",
+            "type": "t_array(t_address)dyn_storage",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:22"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_tTotal",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:24"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_rTotal",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:25"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_tFeeTotal",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:26"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:27"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:28"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_decimals",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:29"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_taxFee",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:30"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_previousTaxFee",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:31"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "totalBurned",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:32"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "holderTaxFeePercentage",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:33"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "teamTaxFeePercentage",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:34"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "burnTaxFeePercentage",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:35"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_teamAddress",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:36"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_signers",
+            "type": "t_array(t_address)dyn_storage",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:38"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "nodeControllerContract",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:39"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "stackingControllerContract",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:40"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_mapSigners",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:42"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "uniqueIdExists",
+            "type": "t_mapping(t_uint256,t_bool)",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:43"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "userTotalBurned",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:44"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_team2Address",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:48"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_gameChangerAddress",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:49"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_farmingPoolAddress",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:50"
+          }
+        ],
+        "types": {
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          }
+        }
+      }
+    },
+    "cb5a8f68a2dbc914cbc201749a3d5ee9639bd6f40c5366b287dc46d9b7ff4b2d": {
+      "address": "0xa1f2D885aaa394a16BD6F2Dc7c5159F38Bf51b35",
+      "txHash": "0xb4e33ee34e6b840824d6ed91e37730bce9cb6cf9249c8889d229dd2d6ff0303c",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:37"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:39"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_totalSupply",
+            "type": "t_uint256",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:41"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:43"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:44"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)45_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:394"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:94"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:7"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:8"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_decimals",
+            "type": "t_uint8",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:9"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_taxFee",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:10"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_teamAddress",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:11"
+          }
+        ],
+        "types": {
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    },
+    "98a867a07561b91190498f168afda2cf03d8278ed32fb90df70c906975f3e431": {
+      "address": "0x731f2c9c25b1A2a04bb2546864f978811E357CbA",
+      "txHash": "0xadafa4f7fb610dba4424c20c956729b87c6e2cefd72842c196d720ef337b7b1c",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:37"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:39"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_totalSupply",
+            "type": "t_uint256",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:41"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:43"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:44"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)45_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:394"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:94"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:7"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:8"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_decimals",
+            "type": "t_uint8",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:9"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_taxFee",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:10"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_teamAddress",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:11"
+          }
+        ],
+        "types": {
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    },
+    "60d7c1fbe453390410c1891470cb5c83b4cd710b054464e1245644784c5efd44": {
+      "address": "0x6787E6C594336eD795BE7633660cffB00d010340",
+      "txHash": "0x8fbb7deafa4b9a0aa0414884a5b744e591ca6da23fcacecfcca7f3964b02a190",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:37"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:39"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_totalSupply",
+            "type": "t_uint256",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:41"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:43"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:44"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)45_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:394"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:94"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:7"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:8"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_decimals",
+            "type": "t_uint8",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:9"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_taxFee",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:10"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_teamAddress",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:11"
+          }
+        ],
+        "types": {
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    },
+    "614af5ed0f765473ec01b52202b966d7d73323a39b87ce04adba63f46fb2858d": {
+      "address": "0x1601080E1C48D0f0863b28022243b9c2e24dee9C",
+      "txHash": "0x58693c368ce1e2b00e85f6504229d5ef563a37dd20ea393f73fd0a29e6db6300",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:37"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:39"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_totalSupply",
+            "type": "t_uint256",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:41"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:43"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:44"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)45_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:394"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:94"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:7"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:8"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_decimals",
+            "type": "t_uint8",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:9"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_taxFee",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:10"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_teamAddress",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:11"
+          }
+        ],
+        "types": {
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    },
+    "f7e023e4eeb7a720a2a64c38acc344985ccd232a067b34b26848afac4132d3ca": {
+      "address": "0x30A48c2b47b4843F45e663fDE9428050DF4600a2",
+      "txHash": "0xed3b7f3cd39516c9218f61948d42f2fd7ad015117f9097695a4ff262cb77bdbd",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:37"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:39"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_totalSupply",
+            "type": "t_uint256",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:41"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:43"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:44"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)45_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:394"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:94"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:7"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:8"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_decimals",
+            "type": "t_uint8",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:9"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_taxFee",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:10"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_teamAddress",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:11"
+          }
+        ],
+        "types": {
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    },
+    "12e932ec327aa5110a9e52f6c4268e302ed20ad3513d74856e1fc493192f26ef": {
+      "address": "0x337f384cEfaA7D89698aEa1d111508114FadDAC3",
+      "txHash": "0xa12ef41226c4b797e2b9d3fad1c1a1450354f8abab3676989fb14252f2543cf5",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:37"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:39"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_totalSupply",
+            "type": "t_uint256",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:41"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:43"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:44"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)45_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:394"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:94"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:7"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:8"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_decimals",
+            "type": "t_uint8",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:9"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_taxFee",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:10"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_teamAddress",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:11"
+          }
+        ],
+        "types": {
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    },
+    "157191e185b219a3b5e7fc93b9c8ac0027371446a77c8f98bc660a3a6a879b50": {
+      "address": "0x12F9602b41d4d2d9F8f76d17866f9aE5eFF05DA4",
+      "txHash": "0x5fd05548f1fc623a9e8f4b90b8da7c54b16cf4c905730d17001d0abdff748a00",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:94"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_rOwned",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:17"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_tOwned",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:18"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:19"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_isExcludedFromFee",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:20"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_isExcluded",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:21"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_excluded",
+            "type": "t_array(t_address)dyn_storage",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:22"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_tTotal",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:24"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_rTotal",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:25"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_tFeeTotal",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:26"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:27"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:28"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_decimals",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:29"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_taxFee",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:30"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_previousTaxFee",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:31"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "totalBurned",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:32"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "holderTaxFeePercentage",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:33"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "teamTaxFeePercentage",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:34"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "burnTaxFeePercentage",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:35"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_teamAddress",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:36"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_signers",
+            "type": "t_array(t_address)dyn_storage",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:38"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "nodeControllerContract",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:39"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "stackingControllerContract",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:40"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_mapSigners",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:42"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "uniqueIdExists",
+            "type": "t_mapping(t_uint256,t_bool)",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:43"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "userTotalBurned",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:44"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_team2Address",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:48"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_gameChangerAddress",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:49"
+          },
+          {
+            "contract": "Ant3Token",
+            "label": "_farmingPoolAddress",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\token\\Ant3Token.sol:50"
+          }
+        ],
+        "types": {
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          }
+        }
+      }
+    },
+    "aa082d70f1981c44063ea36ce36b4a6184b6384899215ed2319551c6002307ff": {
+      "address": "0x1d5fF194A357bb04eb78bD417A607f829BACC244",
+      "txHash": "0xb67b04855e0d5d87eac4e11910515ec1f82f67339b262e0732cbbe7c077f524a",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:37"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:39"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_totalSupply",
+            "type": "t_uint256",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:41"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:43"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:44"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)45_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:394"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:94"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:7"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:8"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_decimals",
+            "type": "t_uint8",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:9"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_taxFee",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:10"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_teamAddress",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:11"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_isExcludedFromFee",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:12"
+          }
+        ],
+        "types": {
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "d72f4825d322f41590fe97d2a8f2aa8c70f4feaf122e916aa4f25e76bfe947d0": {
+      "address": "0xA9c4B8B9b6E7E95122AA907E491A741c967D03AA",
+      "txHash": "0x6753c4d1fb8dc057cc6b1385f54c32295b6ae10092f93994d6ecfa8ae4257666",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:37"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:39"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_totalSupply",
+            "type": "t_uint256",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:41"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:43"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:44"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)45_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:394"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:94"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:7"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:8"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_decimals",
+            "type": "t_uint8",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:9"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_taxFee",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:10"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_teamAddress",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:11"
+          },
+          {
+            "contract": "BSCAnt3",
+            "label": "_isExcludedFromFee",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "..\\project:\\contracts\\token\\BSCAnt3.sol:12"
+          }
+        ],
+        "types": {
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "ee7a9e6082b4cdd750a0f2d7fb38df27b6afac48a775663dc59cf81e30655732": {
+      "address": "0xf69d803B195736e1B8b25ba86cA016776A8767F9",
+      "txHash": "0xbc710384a4f05c1016fb4d2530a37df3d793b6e9af19ed06e5747a5a787689f1",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:94"
+          },
+          {
+            "contract": "TestnetBSCPancakePoolInitializer",
+            "label": "bscAnt3Address",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\BSCPancake\\TestnetBSCPancakePoolInitializer.sol:9"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    },
+    "d6514fae6c87a1b6d69b76b26655dd5b0dc66d6b97a031d7b254e70deca7eeb8": {
+      "address": "0x59118018cf2cAAbE8Ad58f7b95b442cB9f8D7C20",
+      "txHash": "0xbb4beadb1293e1ef7e8f6827218ebb40c1d512ccdce0809cf1b5f1a6fa70df8c",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:94"
+          },
+          {
+            "contract": "TestnetBSCPancakePoolInitializer",
+            "label": "bscAnt3Address",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\BSCPancake\\TestnetBSCPancakePoolInitializer.sol:9"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    },
+    "8a66cd4349b289c91d4e4d26010619bdea43a5e0af92907732dd848a323909c4": {
+      "address": "0xc1c8a17889aD56994aC1809171f02B5a5143FcD8",
+      "txHash": "0x9abaa8449fb4a10f8b8834d23f0ac5bb1abd5396b224c4242fcc3cb7def1d640",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:94"
+          },
+          {
+            "contract": "TestnetBSCPancakePoolInitializer",
+            "label": "bscAnt3Address",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\BSCPancake\\TestnetBSCPancakePoolInitializer.sol:15"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    },
+    "ca9bc097ef15f87e74a9b79117d8a45493eb12c3afd66990f634e0266fb6ab45": {
+      "address": "0x6C054f427ebf79021dEb970293c800e7286fc153",
+      "txHash": "0x24e031c097794a509bc6b686f636288d5e06a7f5aee06c96cb5dbcc7aae9e784",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:94"
+          },
+          {
+            "contract": "TestnetBSCPancakePoolInitializer",
+            "label": "bscAnt3Address",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\BSCPancake\\TestnetBSCPancakePoolInitializer.sol:21"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    }
+  }
+}

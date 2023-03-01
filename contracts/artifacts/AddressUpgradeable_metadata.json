@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.12+commit.f00d7308"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "Collection of functions related to the address type",
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"DeAnt3Token_flat.sol": "AddressUpgradeable"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"DeAnt3Token_flat.sol": {
+			"keccak256": "0x41414b265c0e7d535f9e85b03f38beabcfcb262d94d9dc9e148844d9bb1fa10c",
+			"urls": [
+				"bzz-raw://40373f60f94c46bac577ed29841a36ecdc28ea8e794fd17653ce68069a35ebe4",
+				"dweb:/ipfs/QmXrHruRFEyPiwPaM5weES4G43xEqrXT5WsCBb27HgzX3p"
+			]
+		}
+	},
+	"version": 1
+}
